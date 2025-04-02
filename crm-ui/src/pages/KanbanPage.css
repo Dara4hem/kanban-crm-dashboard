@@ -1,0 +1,91 @@
+.kanban-background {
+  background: linear-gradient(-45deg, #e3f2fd, #fce4ec, #f3e5f5, #e8f5e9);
+  background-size: 400% 400%;
+  animation: gradientFlow 15s ease infinite;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.kanban-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.kanban-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.add-button {
+  padding: 10px 20px;
+  background: #198754;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.add-button:hover {
+  transform: scale(1.05);
+  background: #157347;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.kanban-column {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 10px;
+  min-height: 420px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.kanban-column:hover {
+  transform: translateY(-4px);
+}
+
+.kanban-card {
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.25s ease;
+}
+
+.kanban-card.dragging {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
+}
+
+.edit-button {
+  margin-top: 8px;
+  background: white;
+  color: #000;
+  font-size: 0.85em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-button:hover {
+  background: #f1f1f1;
+}
