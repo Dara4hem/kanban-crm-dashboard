@@ -64,8 +64,3 @@ Visit: http://localhost:5173
 - Beautiful, responsive UI with smooth animations.
 - Stable real-time drag-drop sync with WebSockets.
 - Clear modular code, easy to extend or scale.
-
-## 👨‍💻 Developer
-
-Developed by [Your Name]  
-As part of the CRM Challenge – April 2025
